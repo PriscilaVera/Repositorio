@@ -1,0 +1,57 @@
+
+
+    /* Mobile */
+
+    @media only screen and (min-width: 0px) and (max-width:400px){
+        
+        main {
+            height: 110vh;
+        }
+      
+    }
+    
+    /* Tablet */
+
+    @media only screen and (min-width: 401px) and (max-width:800px){
+
+        .grid-container{
+            display: grid;
+            grid-template-areas: 'top top top top' 'main main main main' 'aside aside aside aside' 'footer footer footer footer';
+                     } 
+        main { height: 80vh;
+                    }   
+    }
+
+    /* Desktop */
+
+    @media only screen and (min-width: 801px) and (max-width:1400px){
+        main { height: 70vh;
+        }
+    }   
+
+ 
+    .transform:hover{
+        transform: translate(20px, 20px);
+        cursor: pointer;
+    }
+
+    .scale:hover{
+        transform: scale(1.2, 1.5);
+        transition: 3s;
+        cursor: pointer;
+    }
+
+    button{
+        width: 100px;
+        height: 25px;
+        background: rgb(249,191,214);
+        background: linear-gradient(90deg, rgba(249,191,214,1) 0%, rgba(228,169,197,1) 32%, rgba(247,155,210,1) 67%);
+        border-radius: 2px;
+        border: none;
+    }
+
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 10px;
+    }
